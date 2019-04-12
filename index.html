@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+    <svg height=600 width=1400 id="globe"></svg>
+    <br/>
+    <div id="year-continents">
+        <h2 id="year" style="font-family: 'Courier New', Courier, monospace">Year: 2005</h2>
+        <input type="range" min="2000" max="2017" value="2005" step="1" class="slider" id="myRange">
+        <div id="continents">
+            <button class="button" id="australia">Australia</button>
+            <button class="button" id="africa">Africa</button>
+            <button class="button" id="asia">Asia</button>
+            <button class="button" id="europe">Europe</button>
+            <button class="button" id="northamerica">North America</button>
+            <button class="button" id="southamerica">South America</button>
+            <button class="button" id="world">Global Overview</button>
+        </div>
+    </div>
+
+    <div id="information-box">
+        <h1 class="info"> Top Soccer Player Transfers (2000-2017)</h1>
+        <br>
+        <h2 id="country" class="info">All Countries</h2>
+        <ul id="details">
+            <li id="country-from" class="info">From: </li>
+            <li id="country-to" class="info">To: </li>
+            <li id="number" class="info">Number of Transfers: </li>
+            <br/>
+            <!-- <u id="leg">Legend</u>
+            <li id="inttransfer1">1 Internal Transfer</li>
+            <g id="small_circle"></g>
+            <br/>
+            <li id="inttransfer10">10 Internal Transfers</li>
+            <g id="large_circle"></g>
+            <li></li> -->
+        </ul>
+        <div id="box-buttons">
+            <button class="switch" id="in">Incoming</button>
+            <button class="switch" id="out">Outgoing</button>
+            <button class="switch" id="all">All</button>
+        </div>
+    </div>
+    <div class="caption">
+        The graphic above displays the top soccer transfers of every year from 2000-2017. The size and color
+        of a line between two points on the map indicate the number of transfer that occurred between leagues in each
+        country. The buttons and slider below can help navigate regions and years. While the map itself is draggable and zoomable.
+        Circles in certain countries indictate the volume of transfers between teams within the country itself.
+        <br/>
+        By clicking on a particular country, you can highlight the transfers coming into and out of that particular country, and can toggle
+        which set you would like to see using the buttons in the informational box to the left. Clicking on a line will give you information about
+        the number of transfers from one country to another.
+    </div>
+
+    
+    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="versor.js"></script>
+    <script src="eldor.js"></script>
