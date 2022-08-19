@@ -126,7 +126,7 @@ d3.csv("data/top250-00-19.csv", function(error2, data2) {
             
             // projection vars and scales
             var proj = d3.geoOrthographic()
-                    .scale(300) // sets the size of the globe in svg
+                    .scale(400) // sets the size of the globe in svg
                     .translate([width / 2 + 600, height / 2])
                     .rotate([-50, -20]) // sets the initail rotation of globe
                     .clipAngle(90); // change this to 180 for transparent globe
