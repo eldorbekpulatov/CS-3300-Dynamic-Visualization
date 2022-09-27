@@ -1,1 +1,1 @@
-# cs3300projectTwo
+# Globe Visualizer
